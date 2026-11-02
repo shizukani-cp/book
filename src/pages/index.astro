@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+
+const books = await getCollection("books");
+
+books.sort(
+  (a, b) =>
+    b.data.finished
+    - a.data.finished
+);
+---
+<Layout>
+  <h1>読書記録</h1>
+
+  <ul>
+    {
+      books.map(book => (
+        <li>
+          <a href={`/book/book/${book.id}`}>
+            {book.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

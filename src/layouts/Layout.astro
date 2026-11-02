@@ -1,0 +1,64 @@
+---
+import "../styles/globals.css";
+
+const title = "静カニの読書記録";
+const description = "静カニの読書記録";
+const siteUrl = "https://shizukani-cp.github.io/book/";
+---
+
+<!DOCTYPE html>
+<html lang="ja" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+
+    <link rel="alternate" type="application/rss+xml" title={title} href="/book/rss.xml" />
+
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-RHCWBF26WV"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RHCWBF26WV');
+    </script>
+  </head>
+  <body>
+    <header class="flex w-full items-center justify-between px-4 py-3 border-b">
+      <a href="/blog/">静カニの読書記録</a>
+      <div class="flex items-center gap-6">
+        <nav>
+          <ul class="flex gap-4">
+            <li>
+              <a href="/book/">ホーム</a>
+            </li>
+            <li>
+              <a href="https://shizukani-cp.github.io/blog/">
+                ブログ
+              </a>
+            </li>
+            <li>
+              <a href="https://shizukani-cp.github.io/htmlapps/">
+                色々ボックス
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <span class="hidden text-xs text-gray-400 md:block">&copy; 2026 shizukani-cp</span>
+      </div>
+    </header>
+
+    <main class="prose prose-invert max-w-none container mx-auto px-4">
+      <slot />
+    </main>
+  </body>
+</html>
+
