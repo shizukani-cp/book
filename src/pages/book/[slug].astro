@@ -21,6 +21,7 @@ const { Content } = await render(book);
 ---
 <Layout>
   <h1>{book.data.title}</h1>
+  <p>{book.data.isbn} {book.data.started}-{book.data.finished}</p>
 
   <Content />
 </Layout>
