@@ -1,0 +1,14 @@
+---
+interface Props {
+  book: object;
+}
+
+const {book} = Astro.props;
+---
+<div class="card relative">
+  <a href={`/book/book/${book.id}/`} class="no-underline after:absolute after:inset-0">
+      <h3>{book.data.title}</h3>
+  </a>
+  <small>{book.data.started}-{book.data.finished}</small>
+</div>
+

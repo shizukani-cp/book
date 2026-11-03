@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
+import BookCard from '../components/BookCard.astro';
 
 const books = await getCollection("books");
 
@@ -11,17 +12,11 @@ books.sort(
 );
 ---
 <Layout>
-  <h1>読書記録</h1>
-
-  <ul>
-    {
-      books.map(book => (
-        <li>
-          <a href={`/book/book/${book.id}`}>
-            {book.data.title}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <main id="pages">
+    <div class="cards">
+      {books.map((book) => (
+        <BookCard book={book} />
+      ))}
+    </div>
+  </main>
 </Layout>
