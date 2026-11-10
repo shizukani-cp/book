@@ -1,7 +1,10 @@
 ---
 title: "バッテリー"
 started: 20261109
+finished: 20261110
 isbn: "978-4-0437-2101-6"
-status: "reading"
+status: "finished"
 ---
+バッテリーは野球の分野では投手と捕手の組み合わせらしいです。
 
+感想は6巻参照
