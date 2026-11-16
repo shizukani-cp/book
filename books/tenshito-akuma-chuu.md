@@ -5,4 +5,4 @@ finished: 20260911
 isbn: "978-4-0429-5507-8"
 status: "finished"
 ---
-感想などは下巻参照
+感想などは[下巻](https://shizukani-cp.github.io/book/book/tenshito-akuma-ge/)参照

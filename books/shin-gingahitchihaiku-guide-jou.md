@@ -5,4 +5,4 @@ finished: 20260711
 isbn: "978-4-3094-6356-8"
 status: "finished"
 ---
-感想などは下巻参照。
+感想などは[下巻](https://shizukani-cp.github.io/book/book/shin-gingahitchihaiku-guide-ge/)参照。
