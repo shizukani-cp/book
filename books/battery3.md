@@ -5,4 +5,4 @@ finished: 20261113
 isbn: "978-4-0437-2103-0"
 status: "finished"
 ---
-感想などは6巻参照
+感想は[6巻](https://shizukani-cp.github.io/book/book/battery6/)参照

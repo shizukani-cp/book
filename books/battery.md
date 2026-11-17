@@ -7,4 +7,4 @@ status: "finished"
 ---
 バッテリーは野球の分野では投手と捕手の組み合わせらしいです。
 
-感想は6巻参照
+感想は[6巻](https://shizukani-cp.github.io/book/book/battery6/)参照

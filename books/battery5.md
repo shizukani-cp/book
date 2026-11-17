@@ -6,3 +6,5 @@ isbn: "978-4-0437-2105-4"
 status: "finished"
 ---
 新田は架空の町らしいです。新見と混同して実在するものだと思っていました。
+
+感想は[6巻](https://shizukani-cp.github.io/book/book/battery6/)参照
